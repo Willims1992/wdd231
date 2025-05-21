@@ -4,6 +4,8 @@
     --accent-color: #555454;
 }        
 body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     background-color: #cecccc;
     margin-top: 0;
 }

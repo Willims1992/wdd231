@@ -1,0 +1,74 @@
+/* Responsive Adjustments for Larger Screens */
+@media (min-width: 500px) {
+    .container {
+        display: grid;
+        grid-template-columns: 2fr auto;
+        grid-template-rows: auto auto;
+        gap: 10px;
+    }
+
+    .section1, .section2, .section3 {
+        background-color: #f4f4f4;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border: 1px solid #ccc;
+        
+    }
+
+    .section1{
+        height: 100%;
+    }
+
+    .section3{
+        grid-column: span 2;
+    }
+
+    .course-list-1 {
+    display: grid;
+   /*grid-template-columns: repeat(3, 1fr); /* Three columns */
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));;
+   /* grid-template-rows: repeat(2, auto); /* Two rows */
+    gap: 10px; /* Adds spacing between items */
+    list-style: none; /* Removes default bullet points */
+    padding-left: 5px;
+    padding-right: 4px;
+    text-align: center;
+   }
+
+    .course-list-1 li {
+    margin: 3px;
+    padding: 10px;
+    border-radius: 5px; /* Rounds the corners */
+    width: 85%;
+    }
+
+    #menu{
+    display: none;
+    }
+
+    .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-link{
+    background-color: black;
+    padding: 10px;
+    margin-bottom: 1px;
+    gap: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: white
+}
+
+
+}
+  
+    

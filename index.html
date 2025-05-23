@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD231, home page, web development, course work">
+    <meta name="author" content="Ofonime William">
+    <meta property="og:title" content="WDD231 home page | Ofonime William">
+    <meta property="og:description" content="WDD231, home page, web development, course work">
+    <meta property="og:url" content="https://willims1992.github.io/wdd231/">
+    <meta property="og:image" content="#09o0-=;'l[]" />
+    <title>WDD231 home page | Ofonime William</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css"> 
+    <script src="scripts/navigation.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header class="home-header">
+            <figure class="header-img">
+                <img src="images/ofonime.webp" alt="william's photo" width="100">
+                <figcaption class="img-name"><span>Ofonime William</span></figcaption>
+            </figure>
+            
+            <button id="menu">menu</button>
+            <nav class="navigation">
+                <ul class="nav-link">
+                    <li class="nav-list"><a href="index.html">Home</a></li>
+                    <li><a href="chamber.html" title="Chamber" class="active">Chamber</a></li>
+                    <li><a href="final.html">Final</a></li>
+                    <li><a href="https://github.com/your-profile">GitHub Profile</a></li>
+                    <li><a href="https://www.linkedin.com/in/your-profile">LinkedIn</a></li>
+                </ul>
+            </nav>  
+    </header>
+    <main>
+        <h1>WDD231 Home page</h1>
+        <div class="container">
+            <section class="section1">
+                <h2 class="li">Course Work</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+               
+            </section>
+            <section class="section2">
+                <h2>Uyo, Nigeria</h2>
+                <figure class="uyo-img">
+                    <img src="images/uyo-2.webp" alt="Internqational Conference Center, Uyo" width="300">
+                    <figcaption>International Conference Center, Uyo, Nigeria.</figcaption>
+                </figure>
+            </section>
+            <section class="section3">
+                <h2>Web and computer progrming</h2>
+                <div class="course-list">
+                    <button id="li-1">ALL</button>
+                    <button id="li-2">CSE</button>
+                    <button id="li-3">WDD</button>
+                </div>
+                <hr>
+
+                <div class="course-list-1 " id="courseListl"></div><div id="courseList1"></div> <!-- Where courses will be displayed -->
+                <p id="totalCredits">Total Credits: 0</p> <!-- Where total credits will be shown -->
+
+
+            </section>
+        </div>
+       
+    </main>
+    <footer class="home-footer">
+        <p>&copy; <span id="currentYear"></span></p>
+        <p>All rights reserved</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

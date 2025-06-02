@@ -101,9 +101,9 @@ function displayCourses(filteredCourses) {
 displayCourses(courses); // Show all courses on page load
 
 
-document.getElementById("li-1").addEventListener("click", () => displayCourses(courses));
-document.getElementById("li-2").addEventListener("click", () => displayCourses(courses.filter(c => c.subject === "WDD")));
-document.getElementById("li-3").addEventListener("click", () => displayCourses(courses.filter(c => c.subject === "CSE")));
+document.getElementById("button1").addEventListener("click", () => displayCourses(courses));
+document.getElementById("button2").addEventListener("click", () => displayCourses(courses.filter(c => c.subject === "WDD")));
+document.getElementById("button3").addEventListener("click", () => displayCourses(courses.filter(c => c.subject === "CSE")));
 
 
 
@@ -118,18 +118,18 @@ function updateTotalCredits(filteredCourses) {
 }
 
 
-document.getElementById("li-1").addEventListener("click", () => {
+document.getElementById("button1").addEventListener("click", () => {
     displayCourses(courses);
     updateTotalCredits(courses);
 });
 
-document.getElementById("li-2").addEventListener("click", () => {
+document.getElementById("button2").addEventListener("click", () => {
     let filtered = courses.filter(c => c.subject === "CSE");
     displayCourses(filtered);
     updateTotalCredits(filtered);
 });
 
-document.getElementById("li-3").addEventListener("click", () => {
+document.getElementById("button3").addEventListener("click", () => {
     let filtered = courses.filter(c => c.subject === "WDD");
     displayCourses(filtered);
     updateTotalCredits(filtered);
@@ -139,15 +139,6 @@ document.getElementById("totalCredits").classList.add("highlight");
 document.getElementById("totalCredits").style.fontSize = "20px";
 document.getElementById("totalCredits").style.fontWeight = "bold";
 document.getElementById("totalCredits").style.color = "blue";
-document.getElementById("totalCredits").style.textAlign = "center";
-document.getElementById("totalCredits").style.marginTop = "20px";
-document.getElementById("totalCredits").style.marginLeft = "20px";
-document.getElementById("totalCredits").style.marginRight = "20px";
-document.getElementById("totalCredits").style.padding = "10px";
-document.getElementById("totalCredits").style.border = "2px solid white";
-document.getElementById("totalCredits").style.borderRadius = "5px";
-document.getElementById("totalCredits").style.backgroundColor = "#f0f0f0";
-document.getElementById("totalCredits").style.boxShadow = "2px 2px 5px rgba(0, 0, 0, 0.3)";
 document.getElementById("totalCredits").style.transition = "all 0.3s ease";
 
 

@@ -61,7 +61,8 @@ button#menu.open::before {
     display: block; /* Show when open */
 }
 
-.active::after { 
+.active::before { 
+
 	content: "📍";
 }
 

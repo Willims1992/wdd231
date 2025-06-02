@@ -1,22 +1,12 @@
 // Get the current year
-//const currentYear = new Date().getFullYear();
+const currentYear = new Date().getFullYear();
 
 // Output the copyright year in the first paragraph of the footer
-//document.querySelector('#current').textContent = `© ${currentYear} Uyo Chamber of Cormmerce\nA. William
+document.querySelector('footer p:first-of-type').textContent = `© ${currentYear} Ofonime A. William
+ Uyo Nigeria`;
 
 //Get the date the document was last modified//
-//const lastModified = document.lastModified;
+const lastModified = document.lastModified;
 
 // Output the date the document was last modified in the second paragraph of the footer
-//document.querySelector('#lastModified').textContent = `Last Modified: ${lastModified}`;
-const currentYear = new Date().getFullYear();
-document.getElementById('currentYear').innerHTML = 
-`WDD231 Project class <br>
-A. Williams <br>
-© ${currentYear} Uyo Chamber of Commerce <br>`;
-  
-
-
-const lastModified = document.lastModified;
-document.getElementById('lastModified').textContent = `Last Modified: ${lastModified}`;
-
+document.querySelector('footer p:nth-of-type(2)').textContent = `Last Modified: ${lastModified}`;

@@ -101,9 +101,9 @@ function displayCourses(filteredCourses) {
 displayCourses(courses); // Show all courses on page load
 
 
-document.getElementById("li-1").addEventListener("click", () => displayCourses(courses));
-document.getElementById("li-2").addEventListener("click", () => displayCourses(courses.filter(c => c.subject === "WDD")));
-document.getElementById("li-3").addEventListener("click", () => displayCourses(courses.filter(c => c.subject === "CSE")));
+document.getElementById("button1").addEventListener("click", () => displayCourses(courses));
+document.getElementById("button2").addEventListener("click", () => displayCourses(courses.filter(c => c.subject === "WDD")));
+document.getElementById("button3").addEventListener("click", () => displayCourses(courses.filter(c => c.subject === "CSE")));
 
 
 
@@ -118,18 +118,18 @@ function updateTotalCredits(filteredCourses) {
 }
 
 
-document.getElementById("li-1").addEventListener("click", () => {
+document.getElementById("button1").addEventListener("click", () => {
     displayCourses(courses);
     updateTotalCredits(courses);
 });
 
-document.getElementById("li-2").addEventListener("click", () => {
+document.getElementById("button2").addEventListener("click", () => {
     let filtered = courses.filter(c => c.subject === "CSE");
     displayCourses(filtered);
     updateTotalCredits(filtered);
 });
 
-document.getElementById("li-3").addEventListener("click", () => {
+document.getElementById("button3").addEventListener("click", () => {
     let filtered = courses.filter(c => c.subject === "WDD");
     displayCourses(filtered);
     updateTotalCredits(filtered);

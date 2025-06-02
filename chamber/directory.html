@@ -10,8 +10,71 @@
     <meta property="og:url" content="https://willims1992.github.io/wdd231/">
     <meta property="og:image" content="">
     <title>Chamber</title>
+    <link rel="stylesheet" href="style/normalise.css">
+    <link rel="stylesheet" href="style/directory.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="../scripts/date.js" defer></script>
+    <script src="./script/directory.js" defer></script>
+    <script src="../scripts/navigation.js" defer></script>
+
 </head>
 <body>
+    <header>
+        <figure class="logo">
+            <img src="image/favicon(2).ico" alt="Uyo Chamber of Commerce Logo">
+            <figcaption><strong>Uyo</strong><br> Chamber of Commerce</figcaption>
+        </figure>
+
+    
+        <nav class="navigation">
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Directory</a></li>
+                <li><a href="#">Joint</a></li>
+                <li><a href="#" title="Discover" class="active">Discover</a></li>
+            </ul>
+        </nav>
+       
+        <button id="menu"></button> 
+    
+    </header>
+
+    <main>
+        <div class="display">
+            <button id="grid">
+            <i class="fas fa-th"></i> Grid View</button>
+            <button id="list">
+            <i class="fas fa-list"></i> List Viev</button>
+        </div>
+        <div id="membersCard"></div>
+        
+    </main>
+    <hr>
+
+    <footer>
+        <div class="adress">
+            <p><strong>Uyo Chamber Of Commerce</strong> <br>C45 Ewet Housing Estate <br>Uyo, Akwa Ibom State <br>info@ucc.org <br>(234) 8151915541</p>
+        </div>
+
+        <div class="media">
+            <a href="https://youtube.com" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+         
+        <div class="copyright">
+           <p> WDD231 Class Project<br>Ofonime William <br>&copy;Uyo Chamber Commerce  <span id="currentYear"></span></p>
+           <p id="lastModified"></p>
+        </div>
+    </footer>
+
+
+
     
 </body>
 </html>

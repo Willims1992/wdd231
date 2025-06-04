@@ -23,16 +23,16 @@
             "address": "Industrial Layout, Aka Offot, Uyo, Akwa Ibom, Nigeria",
             "phone": "+234-8034223272",
             "website": "https://championbreweries.com",
-            "icon": "championbreweries.png",
+            "icon": "https://championbreweries.com/wp-content/uploads/2023/05/logo.png",
             "membership_level": 3,
             "description": "A leading brewery producing Heineken, malta drinks, and other beverages."
         },
         {
             "name": "PHED Uyo",
-            "address": "No.3 Ekpeyong Street, off Barracks Road, Uyo, Akwa Ibom, Nigeria",
+            "address": "No.3 Ekpeyong Street Uyo, Akwa Ibom, Nigeria",
             "phone": "+234-8114646322",
             "website": "https://phed.com.ng",
-            "icon": "phed.png",
+            "icon": "https://phed.com.ng/assets/image001.png",
             "membership_level": 3,
             "description": "Electricity distribution, billing, and metering services in Uyo."
         },
@@ -47,10 +47,10 @@
         },
         {
             "name": "Radiant Oak Intelligence",
-            "address": "Grace & Mercy House, 135A Edet Akpan Avenue, Uyo, Akwa Ibom, Nigeria",
+            "address": "135A Edet Akpan Avenue, Uyo, Akwa Ibom, Nigeria",
             "phone": "+234-8101097101",
-            "website": "https://radiantoak.com",
-            "icon": "radiantoak.png",
+            "website": "https://vksconstruction.com/static/media/logo.230e3bca.png",
+            "icon": "https://vksconstruction.com/static/media/logo.230e3bca.png",
             "membership_level": 1,
             "description": "Business development, branding, and marketing consultancy."
         },
@@ -58,18 +58,18 @@
             "name": "Starthub Technology Ltd",
             "address": "Suite G11, Ground Floor, Ibom e-Library, Uyo, Akwa Ibom, Nigeria",
             "phone": "+234-9090009216",
-            "website": "https://starthubtech.com",
-            "icon": "starthub.png",
+            "website": "https://starthub.com.ng/",
+            "icon": "https://starthub.com.ng/wp-content/uploads/2025/01/Start-Innovation-Hub-Logo-2048x748.png",
             "membership_level": 2,
             "description": "An ICT firm supporting startups with software and hardware solutions."
         },
         {
-            "name": "Andykelv Business Centre",
-            "address": "No 14 Duo Idiong Nka Street, Eniong Offot, Uyo, Akwa Ibom, Nigeria",
+            "name": "Radient viewer",
+            "address": "No 14 Duo Nka Street, Uyo, Akwa Ibom, Nigeria",
             "phone": "+234-7039517004",
-            "website": "https://andykelv.com",
-            "icon": "andykelv.png",
-            "membership_level": 3,
+            "website": "https://www.radiantviewer.com/",
+            "icon": "https://www.radiantviewer.com/img/radiantlogo.png",
+            "membership_level": 1,
             "description": "Printing, internet services, online registration, and typesetting."
         },
         {
@@ -82,11 +82,11 @@
             "description": "Telecommunication services including SIM card registration and sales."
         },
         {
-            "name": "Asuma Communication",
-            "address": "10, Main Access Road to Mammy Market Road, Idu, Uyo, Akwa Ibom, Nigeria",
+            "name": "Andela",
+            "address": "Mammy Market Road, Idu, Uyo, Nigeria",
             "phone": "+234-8039319419",
-            "website": "https://asumacommunication.com",
-            "icon": "asuma.png",
+            "website": "https://www.andela.com/",
+            "icon": "https://cdn.prod.website-files.com/660dcc7f45ad8881324199b5/66267ca5100e5bf7643aa0d6_andela_logo.svg",
             "membership_level": 1,
             "description": "Telecommunication services including SIM card registration and sales."
         }

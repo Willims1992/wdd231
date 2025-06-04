@@ -35,7 +35,7 @@ body{
     margin-right: 15px;
 }
 
-button#menu {
+button#menuButton {
     font-size: 1.5rem;
     background: none;
     border: none;
@@ -45,12 +45,12 @@ button#menu {
     right: 1rem;
 }
 
-button#menu::before {
+button#menuButton::before {
     content: "\2261"; /* Hamburger Icon */
     border: 2px  solid gold 
 }
 
-button#menu.open::before {
+button#menuButton.open::before {
     content: "✖"; /* Close Icon */
     color: gold;
     border: 2px solid #bbb;
@@ -92,6 +92,8 @@ hr{
     justify-content: space-around;
     list-style: none;
 }
+
+
 
 .nav-link a{
     text-decoration: none;

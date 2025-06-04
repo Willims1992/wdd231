@@ -160,8 +160,9 @@ footer{
 	content: "📍";
 }
 
-button#menu {
+button#menuButton {
     display: flex;
+    
     font-size: 2.5rem;
     font-weight: bold;
     background: none;
@@ -172,11 +173,11 @@ button#menu {
     right: 1rem;
 }
 
-button#menu::before {
+button#menuButton::before {
     content: "\2261"; /* Hamburger Icon */ 
 }
 
-button#menu.open::before {
+button#menuButton.open::before {
     content: "✖"; /* Close Icon */
     color: #f57c00;
 
@@ -197,16 +198,16 @@ button#menu.open::before {
 /* Default list view (stacked layout) */
 
 .display {
-	margin: 1rem auto;
-	padding: 0.5rem;
-	text-align: center;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    text-align: center;
 
-	button {
+    button {
         background-color: black;
-        color: #ffffff;
-		padding: 0.5rem 1rem;
-		font-weight: 700;
-	}
+        color: #ffff;
+        padding: 0.5rem 1rem;
+        font-weight: 700;
+    }
 
     button:hover{
         background-color: rgb(174, 170, 170);
@@ -231,7 +232,7 @@ button#menu.open::before {
 
         img {
             margin-top: -10px;
-            width: 40%;
+            width: 30%;
             height: auto;
             max-width: 200px;
             box-shadow: 0 0 30px #777;
@@ -316,7 +317,7 @@ button#menu.open::before {
 
 @media (min-width:780px){
     
-    button#menu{
+    button#menuButton{
     display: none;
     }
 

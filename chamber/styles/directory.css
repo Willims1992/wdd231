@@ -202,60 +202,58 @@ button#menuButton.open::before {
     padding: 0.5rem;
     text-align: center;
 
-    button {
-        background-color: black;
-        color: #ffff;
-        padding: 0.5rem 1rem;
-        font-weight: 700;
-    }
+    .display button {
+    background-color: black;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+}
 
-    button:hover{
-        background-color: rgb(174, 170, 170);
-        color: black;
-    }
+.display button:hover {
+    background-color: rgb(174, 170, 170);
+    color: black;
+}
+
 }
 .list {
   display: flex;
   flex-direction: column;
 
     section {
-     display: grid;
-     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-     width: 100%;
-     border: none;
-     padding: 0.25rem;
-    
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    border: none;
+    padding: 0.25rem;
+}
 
-     & > * {
-		 margin:  1rem;
-	 }
+section > * {
+    margin: 1rem;
+}
 
-        img {
-            margin-top: -10px;
-            width: 30%;
-            height: auto;
-            max-width: 200px;
-            box-shadow: 0 0 30px #777;
+section img {
+    margin-top: -10px;
+    width: 30%;
+    height: auto;
+    max-width: 200px;
+    box-shadow: 0 0 30px #777;
+}
 
-        }
+section h3 {
+    font-size: 1rem;
+    margin-top: 50px;
+}
 
-     
+.membership-level {
+    margin-right: 150px;
+    margin-top: -40px;
+}
 
-     h3 {
-		font-size: 1rem;
-        margin-top: 50px;
-	 }
+section:nth-child(even) {
+    background-color: #e0dddd;
+}
 
-
-     .membership-level{
-        margin-right: 150px;
-        margin-top: -40px;
-     }
-
-     &:nth-child(even) {
-		background-color: #e0dddd;
-		}
-    }    
+ 
 }
 
 @media (max-width: 800px) {
@@ -351,9 +349,10 @@ button#menuButton.open::before {
 
 
 
-    .navigation ul a{
-        flex: 1 1 1 0;
+    .navigation ul a {
+    flex: 1 1 auto; /* Correct usage */
     }
+
 
     #membersCard{
         width: 90%;

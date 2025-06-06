@@ -68,6 +68,11 @@ navigation ul li{
     border-radius: 30px;
 }
 
+h1{
+    text-align: center;
+    text-shadow: 0 0 30px #7f7c7c;;
+}
+
 
 #membersCard {
     margin-top: 10px;

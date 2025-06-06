@@ -229,7 +229,7 @@ button#menuButton.open::before {
 
     section {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);;
     width: 100%;
     border: none;
     padding: 0.25rem;

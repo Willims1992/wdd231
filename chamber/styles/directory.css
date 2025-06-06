@@ -208,10 +208,13 @@ button#menuButton.open::before {
     text-align: center;
 
     .display button {
-    background-color: black;
-    color: #ffffff;
-    padding: 0.5rem 1rem;
-    font-weight: 700;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  }
 }
 
 .display button:hover {
@@ -219,7 +222,7 @@ button#menuButton.open::before {
     color: black;
 }
 
-}
+
 .list {
   display: flex;
   flex-direction: column;
@@ -230,13 +233,13 @@ button#menuButton.open::before {
     width: 100%;
     border: none;
     padding: 0.25rem;
-}
+    }
 
 section > * {
     margin: 1rem;
-}
+    }
 
-section img {
+    section img {
     margin-top: -10px;
     width: 30%;
     height: auto;

@@ -85,6 +85,10 @@ h1{
     display: none !important;
 }
 
+:root {
+    --fa-rotate-angle: 0deg; /* Instead of 'none' */
+}
+
 section {
     margin:0 auto;
     margin-bottom: 5px;

@@ -21,14 +21,13 @@
 
         {
             
-             "date": "2023-11-05",
-             "time": "6:00 PM - 10:00 PM",
-             "location": "Grand Ballroom",
-             "imageUrl": "https://www.julius-berger.com/fileadmin/_processed_/6/0/csm_2023.11.05_event_julius_berger_announces_new_partnership_with_nigerian_government_6c0f1b8d2a.jpg",
+            "event": "Julius Berger announces new partnership with Nigerian government",
+            "date": "2023-11-05",
+            "time": "6:00 PM - 10:00 PM",
+            "location": "Grand Ballroom",
+            "imageUrl": "https://www.julius-berger.com/fileadmin/_processed_/6/0/csm_2023.11.05_event_julius_berger_announces_new_partnership_with_nigerian_government_6c0f1b8d2a.jpg",
             "url": "https://www.julius-berger.com/events/julius-berger-announces-new-partnership-with-nigerian-government"
-       }
-
-  
+        }
             
     ]
 }

@@ -1,6 +1,55 @@
-
+const eventsUrl = 'https://willims1992.github.io/wdd231/chamber/data/events.json';
 const weatherURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=4.8594&lon=6.8679&units=metric&appid=81a2d962ae620e6d346c70ee33c924ff';
 const membersURL = 'https://willims1992.github.io/wdd231/chamber/data/members.json';
+
+// Function to fetch and display events
+
+async function fetchEvents() {
+    try {
+        const response = await fetch(eventsUrl);
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+
+        const data = await response.json();
+        displayEvents(data.currentEvents);
+    }
+    catch (error) {
+        console.error('Events fetch failed:', error);
+    }
+}
+
+function displayEvents(events) {
+    const eventsContainer = document.getElementById('eventsContainer');
+    eventsContainer.innerHTML = ""; // Clear existing content
+
+    events.forEach(event => {
+
+        
+        const eventCard = document.createElement('div');
+        eventCard.classList.add('event-card');
+        console.log("Event Data:", event); // Debugging log
+        
+        if (!event.event) {
+            console.error("Missing event name!", event);
+            return;
+        }
+
+        eventCard.innerHTML = `
+            <img src="${event.imageUrl}" alt="${event.event}">
+            <h3>${event.event}</h3>
+            <p><strong>Time:</strong> ${event.time}</p>
+            <p><strong>Location:</strong> ${event.location}</p>
+            <a href="${event.url}" target="_blank">Read More</a>
+        `;
+
+        eventsContainer.appendChild(eventCard);
+    });
+}
+
+// Call fetchEvents when page loads
+document.addEventListener("DOMContentLoaded", fetchEvents);
+
+//functrion to display events
+
 
 
 

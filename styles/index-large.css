@@ -25,7 +25,7 @@
     .course-list-1 {
     display: grid;
    /*grid-template-columns: repeat(3, 1fr); /* Three columns */
-   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
    /* grid-template-rows: repeat(2, auto); /* Two rows */
     gap: 10px; /* Adds spacing between items */
     list-style: none; /* Removes default bullet points */

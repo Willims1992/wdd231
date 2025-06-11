@@ -1,7 +1,9 @@
+
 const weatherURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=4.8594&lon=6.8679&units=metric&appid=81a2d962ae620e6d346c70ee33c924ff';
 const membersURL = 'https://willims1992.github.io/wdd231/chamber/data/members.json';
 
-// Fetch weather data
+
+
 async function fetchWeather() {
     try {
         const response = await fetch(weatherURL);

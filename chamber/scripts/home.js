@@ -26,13 +26,6 @@ function displayEvents(events) {
         
         const eventCard = document.createElement('div');
         eventCard.classList.add('event-card');
-        console.log("Event Data:", event); // Debugging log
-        
-        if (!event.event) {
-            console.error("Missing event name!", event);
-            return;
-        }
-
         eventCard.innerHTML = `
             <img src="${event.imageUrl}" alt="${event.event}">
             <h3>${event.event}</h3>

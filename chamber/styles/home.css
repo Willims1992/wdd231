@@ -208,6 +208,153 @@ button#menuButton.open::before {
     display: block;
 }
 
+#eventsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5px;
+    margin: 0 auto;
+     
+}
+
+.event-card {
+    margin: 0 auto;
+	padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+	background-color: #eee;
+	border: 1px solid rgb(0 0 0 / 10%);
+	display: flex;
+    width: 90%;
+	flex-direction: column;
+	align-items: center;
+    border-radius: 20px; 
+}
+
+
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #777;
+    transition: box-shadow 0.3s ease;
+}
+
+.event-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 0 30px #777;
+    border-radius: 10px;
+    
+}
+
+.event-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.event-card p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.event-card a {
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #ff4b4b;
+    border-radius: 20px;
+    width: 50%;
+
+    
+}
+
+.event-card a:hover {
+    text-decoration: underline;
+    transition: background 3s ease;
+}
+
+#weather{
+    background-color: #777;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+
+}
+
+
+.weather-flex {
+    background-color: #eee;
+    padding: 10px;
+    margin-right: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#current-temp{
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+#weather-icon {
+    color: blue;
+    margin-right: 50px;
+    
+}
+
+#forecast {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.forecast-day {
+    width: 20%;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 10%;
+    margin: 0 5px;
+    text-align: center;
+}
+
+#spotlights{
+    background-color: #eee;
+    margin-top: 20px;
+    margin-bottom: 10px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.spotlight-card {
+    margin: 0 auto;
+    padding: 10px;
+    height: auto;
+    margin-top: 5px;
+    background-color: #eee;
+    border: 1px solid rgb(0 0 0 / 10%);
+    box-shadow: 0 0 30px #7f7c7c;
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spotlight-card p{
+    margin-top: -10px;
+    padding: 12px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
 
 
 

@@ -386,6 +386,7 @@ button#menuButton.open::before {
 }
 
 .display {
+    display: none;
     text-align: center;
     margin: 20px 0;
 }
@@ -445,17 +446,6 @@ button#menuButton.open::before {
     background-color: #e0dddd
 }
 
- #grid, #list  {
-    display: none;
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -464,9 +454,7 @@ button#menuButton.open::before {
     display: none;
     }
 
-     #grid, #list  {
-    display: block;
-    }
+     
 
     .navigation {
     display: flex;
@@ -498,6 +486,10 @@ button#menuButton.open::before {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(247px, 1fr));
     gap: 4px;
+  }
+
+  .display{
+    display: block;
   }
 
 

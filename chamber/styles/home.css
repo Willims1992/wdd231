@@ -297,6 +297,7 @@ button#menuButton.open::before {
     gap: 5px;
 }
 
+
 #current-temp{
     margin-left: 10px;
     font-size: 1.5rem;
@@ -330,24 +331,34 @@ button#menuButton.open::before {
     margin-top: 20px;
     margin-bottom: 10px;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .spotlight-card {
     margin: 0 auto;
-    padding: 10px;
-    height: auto;
+	padding: 10px;
     margin-top: 5px;
-    background-color: #eee;
-    border: 1px solid rgb(0 0 0 / 10%);
-    box-shadow: 0 0 30px #7f7c7c;
-    display: flex;
-    width: 300px;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 20px;
+	background-color: #ece7e7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+	border: 1px solid rgb(0 0 0 / 10%);
+	display: flex;
+    width: 90%;
+	flex-direction: column;
+	align-items: center;
+    border-radius: 20px; 
+}
+
+.spotlight-card:hover {
+    transform: translateY(-10px);
+    scale: 1.05;
+    box-shadow: 0 0 30px #777;
+    transition: box-shadow 0.3s ease;
 }
 
 .spotlight-card p{
+    color: #3c3b3b;
     margin-top: -10px;
     padding: 12px;
     font-size: 20px;
@@ -355,6 +366,88 @@ button#menuButton.open::before {
 
 }
 
+.spotlight-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.spotlight-card .membership {
+    width: 90%;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #ff4b4b;
+    color: #ffffff;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #777;
+    align-items: center;
+}
+
+.display {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.display button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #292828;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.display button:hover {
+    background-color: #777;
+    color: black;
+}
+
+
+
+#spotlights.list {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.list div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 90%;
+    height: autopx;
+    border: 0;
+    padding: 0.25rem;
+}
+
+.list div > * {
+    margin: 1rem;
+    }
+
+.list  div img {
+    margin-top: -10px;
+    width: 50%;
+    height: auto;
+    max-width: 200px;
+
+ }
+
+.list div h3 {
+    font-size: 1rem;
+    margin-top: 50px;
+} 
+
+ #spotlight.list div:nth-child(2) {
+    background-color: #e0dddd
+}
+
+ #grid, #list  {
+    display: none;
+ }
 
 
 
@@ -369,6 +462,10 @@ button#menuButton.open::before {
 @media (min-width:850px) {
      button#menuButton{
     display: none;
+    }
+
+     #grid, #list  {
+    display: block;
     }
 
     .navigation {
@@ -392,5 +489,17 @@ button#menuButton.open::before {
     .navigation ul a {
       flex: 1 1 auto; /* Correct usage */
     }
+
+    .list {
+     display: block;
+   }
+
+   .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(247px, 1fr));
+    gap: 4px;
+  }
+
+
 
 }

@@ -87,10 +87,6 @@ function showList() {
 
 const url = 'https://willims1992.github.io/wdd231/chamber/data/members.json'; // Public URL
 
-const membersCard = document.querySelector('#membersCard');
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-
 async function fetchMembers() {
   try {
     const response = await fetch(url);
@@ -156,6 +152,11 @@ function getMembershipLevel(level) {
 }
 
 fetchMembers(); // Call the function to fetch members
+
+
+const membersCard = document.querySelector('#membersCard');
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
 
 gridbutton.addEventListener("click", () => {
   membersCard.classList.add("grid");

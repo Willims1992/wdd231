@@ -120,3 +120,19 @@ window.addEventListener('DOMContentLoaded', () => {
     fetchWeather();
     fetchMembers();
 });
+
+
+const gridbutton = document.getElementById("grid");
+const listbutton = document.getElementById("list");
+const eventsContainer = document.querySelector("#spotlights"); 
+
+gridbutton.addEventListener("click", () => {
+  spotlights.classList.add("grid");
+  spotlights.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList);
+function showList() {
+  eventsContainer.classList.add("list");
+  eventsContainer.classList.remove("grid");
+}

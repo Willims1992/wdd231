@@ -219,8 +219,8 @@ button#menuButton.open::before {
 .event-card {
     margin: 0 auto;
 	padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 	background-color: #eee;
 	border: 1px solid rgb(0 0 0 / 10%);
 	display: flex;
@@ -365,6 +365,7 @@ button#menuButton.open::before {
     text-align: center;
 
 }
+
 
 .spotlight-card img {
     width: 30%;

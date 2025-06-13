@@ -1,7 +1,8 @@
 :root {
     --fa-rotate-angle: 45deg; /* Example value */
 }
-body{
+html, body{
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -36,6 +37,9 @@ figcaption{
 
 strong{
     font-size: 20px;
+}
+h1{
+    font-family: "Roboto", sans-serif;
 }
 
 h2{

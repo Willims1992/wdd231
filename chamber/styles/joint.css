@@ -1,4 +1,12 @@
-
+:root {
+    --fa-rotate-angle: 45deg; /* Example value */
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+}
 header{
     background-color: #143d16;
     padding: 0.5rem;

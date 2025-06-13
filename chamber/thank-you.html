@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Your Submission</title>
+    <link rel="stylesheet" href="styles/thank-you.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<main>
+    <section class="thank-you-message">
+        <h1>Thank You for Your Submission!</h1>
+        <p>We appreciate your interest in joining the Uyo Chamber of Commerce. Below is the information you provided:</p>
+        
+        <div class="submission-details">
+            <p><strong>First Name:</strong> <span id="first-name"></span></p>
+            <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Mobile:</strong> <span id="phone"></span></p>
+            <p><strong>Business Name:</strong> <span id="organization"></span></p>
+            <p><strong>Timestamp:</strong> <span id="timestamp"></span></p>
+        </div>
+    </section>
+</main>
+
+<script>
+    // Retrieve form data from URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    document.getElementById("first-name").textContent = urlParams.get("first-name");
+    document.getElementById("last-name").textContent = urlParams.get("last-name");
+    document.getElementById("email").textContent = urlParams.get("email");
+    document.getElementById("phone").textContent = urlParams.get("phone");
+    document.getElementById("organization").textContent = urlParams.get("organization");
+    document.getElementById("timestamp").textContent = urlParams.get("timestamp");
+</script>
+
+</body>
+</html>

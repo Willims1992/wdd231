@@ -31,7 +31,7 @@ function displayEvents(events) {
             <h3>${event.event}</h3>
             <p><strong>Time:</strong> ${event.time}</p>
             <p><strong>Location:</strong> ${event.location}</p>
-            <a href="${event.url}" target="_blank">Read More</a>
+            <a href="${event.url}" target="_blank">Read More about the events</a>
         `;
 
         eventsContainer.appendChild(eventCard);

@@ -1,4 +1,5 @@
-[
+{
+    "items": [
     {
         "name": "Ekpe Festival",
         "address": "Uyo, Akwa Ibom State",
@@ -47,4 +48,6 @@
         "description": "A modern entertainment complex featuring a shopping mall, cinema, and amusement park.",
         "image": "images/ibom_tropicana.webp"
     }
-]
+ ]
+
+}

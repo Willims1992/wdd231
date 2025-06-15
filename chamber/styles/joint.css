@@ -3,6 +3,7 @@
 }
 html, body{
     overflow-x: hidden;
+    padding: 10px;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -117,6 +118,7 @@ button#menuButton.open::before {
 
 .form-container {
     max-width: 500px;
+    padding: 15px;
     margin: 0 auto;
 }
 
@@ -144,6 +146,7 @@ input, select, textarea {
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
+    padding: 15px;
     margin-top: 30px;
 }
 
@@ -223,11 +226,12 @@ footer{
     100% { opacity: 1; transform: translateY(0); }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 320px) {
     .membership-container {
         flex-direction: column;
     }
 }
+
 
 @media screen and (min-width: 768px) {
 

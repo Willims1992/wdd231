@@ -3,59 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Discover Uyo</title>
+    <link rel="stylesheet" href="styles/joint.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <script src="scripts/discover.js" defer></script>
 </head>
 <body>
-    <header>
+
+<header>
     <figure class="logo">
-        <img src="images/favicon(2).ico" alt="Uyo Chamber of Commerce logo featuring stylized initials UCC in blue and gold, conveying professionalism and community focus, with a clean background and no additional text">
+        <img src="images/favicon(2).ico" alt="Uyo Chamber of Commerce Logo">
         <figcaption><strong>Uyo</strong><br> Chamber of Commerce</figcaption>
     </figure>
     <nav class="navigation">
         <ul>
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Joint</a></li>
-            <li><a href="discover.html" title="Discover" class="active">Discover</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="joint.html">Joint</a></li>
+            <li><a href="discover.html" class="active">Discover</a></li>
         </ul>
     </nav>
     <button id="menuButton" aria-label="Open navigation menu"></button> 
 </header>
 
-    
+<main>
+    <h1>Discover Uyo</h1>
+    <section class="grid-container" id="items-container">
+        <!-- Cards will be dynamically inserted here -->
+    </section>
+</main>
 
-    <main>
+<footer>
+    <div class="address">
+        <p><strong>Uyo Chamber Of Commerce</strong><br>C45 Ewet Housing Estate<br>Uyo, Akwa Ibom State<br>info@ucc.org<br>(234) 8151915541</p>
+    </div>
 
-    </main>
+    <div class="copyright">
+        <p>WDD231 Class Project<br>Ofonime William<br>&copy; Uyo Chamber Commerce <span id="currentYear"></span></p>
+        <p id="lastModified"></p>
+    </div>
+</footer>
 
-    <footer>
-        <div class="adress">
-            <p><strong>Uyo Chamber Of Commerce</strong> <br>C45 Ewet Housing Estate <br>Uyo, Akwa Ibom State <br>info@ucc.org <br>(234) 8151915541</p>
-        </div>
-
-        <div class="media">
-            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" title="YouTube">
-                <i class="fa-brands fa-youtube fa-rotate-50"></i>
-          </a>
-
-           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" title="Twitter">
-               <i class="fa-brands fa-twitter fa-rotate-60"></i>
-           </a>
-
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-                <i class="fa-brands fa-linkedin fa-rotate-50"></i>
-            </a>
-            <!--<a href="https://youtube.com" target="_blank" rel="noopener" title="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener" title="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>-->
-        </div>
-         
-        <div class="copyright">
-           <p> WDD231 Class Project<br>Ofonime William <br>&copy;Uyo Chamber Commerce  <span id="currentYear"></span></p>
-           <p id="lastModified"></p>
-        </div>
-    </footer>
-
-    
 </body>
 </html>

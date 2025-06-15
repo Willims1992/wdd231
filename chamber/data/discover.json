@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Ekpe Festival",
+        "address": "Uyo, Akwa Ibom State",
+        "description": "A vibrant annual festival showcasing the rich cultural heritage of Uyo, featuring colorful displays and traditional performances.",
+        "image": "images/ekpe_festival.webp"
+    },
+    {
+        "name": "The Amalgamation House",
+        "address": "Wellington Bassey Way, Uyo",
+        "description": "A historic site where the amalgamation of Northern and Southern Nigeria was declared in 1914.",
+        "image": "images/amalgamation_house.webp"
+    },
+    {
+        "name": "National Museum of Colonial History",
+        "address": "Wellington Bassey Way, Uyo",
+        "description": "A museum housing artifacts and relics from Nigeria’s colonial era, offering insights into the country’s historical development.",
+        "image": "images/national_museum.webp"
+    },
+    {
+        "name": "Ibom Plaza",
+        "address": "Uyo City Center",
+        "description": "A bustling plaza with an open theater, shopping areas, and a double-rolled water fountain, serving as a hub for social and commercial activities.",
+        "image": "images/ibom_plaza.webp"
+    },
+    {
+        "name": "Godswill Akpabio International Stadium",
+        "address": "Uyo, Akwa Ibom State",
+        "description": "A world-class stadium hosting football matches, concerts, and major sporting events in Nigeria.",
+        "image": "images/godswill_stadium.webp"
+    },
+    {
+        "name": "Le Méridien Hotel and Resort",
+        "address": "Nwaniba Road, Uyo",
+        "description": "A luxurious hotel offering premium accommodations, fine dining, and recreational facilities for visitors.",
+        "image": "images/le_meridien.webp"
+    },
+    {
+        "name": "Orun Museum",
+        "address": "Uyo, Akwa Ibom State",
+        "description": "A museum dedicated to preserving the cultural artifacts and traditions of the Ibibio people.",
+        "image": "images/orun_museum.webp"
+    },
+    {
+        "name": "Ibom Tropicana Entertainment Mall",
+        "address": "Uyo City Center",
+        "description": "A modern entertainment complex featuring a shopping mall, cinema, and amusement park.",
+        "image": "images/ibom_tropicana.webp"
+    }
+]

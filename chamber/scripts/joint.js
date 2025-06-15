@@ -18,4 +18,24 @@ window.addEventListener("keydown", function(event) {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    let currentPage = window.location.pathname.split("/").pop(); // Get current file name
+
+    document.querySelectorAll("nav a").forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active"); // Highlight current page
+        } else {
+            link.classList.remove("active");
+        }
+    });
+});
+
+
+document.querySelector("form").addEventListener("submit", function () {
+    let timestamp = new Date().toISOString(); // Get current timestamp
+    document.getElementById("timestamp").value = timestamp;
+});
+
+
+
 

@@ -18,7 +18,7 @@ async function fetchEvents() {
 }
 
 function displayEvents(events) {
-    const eventsContainer = document.getElementById('eventsContainer');
+    const eventsContainer = document.getElementById('current-events');
    // eventsContainer.innerHTML = ""; // Clear existing content
 
     events.forEach(event => {

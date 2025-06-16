@@ -22,7 +22,7 @@
         "name": "Ibom Plaza",
         "address": "Uyo City Center",
         "description": "A bustling plaza with an open theater, shopping areas, and a double-rolled water fountain, serving as a hub for social and commercial activities.",
-        "image": "chamber/images/plaza.webp"
+        "image": "images/plaza.webp"
     },
     {
         "name": "Godswill Akpabio International Stadium",
@@ -34,7 +34,7 @@
         "name": "Le Méridien Hotel and Resort",
         "address": "Nwaniba Road, Uyo",
         "description": "A luxurious hotel offering premium accommodations, fine dining, and recreational facilities for visitors.",
-        "image": "chamber/images/lemeridian.webp"
+        "image": "images/lemeridian.webp"
     },
     {
         "name": "Orun Museum",

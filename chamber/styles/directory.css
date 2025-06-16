@@ -326,7 +326,7 @@ button#menuButton.open::before {
 #membersCard.grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(247px, 1fr));
-  gap: 10px;
+  gap: 5px;
 }
 
 
@@ -362,8 +362,8 @@ button#menuButton.open::before {
 
  .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(247px, 1fr));
-  gap: 4px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 10px;
   }
 
 

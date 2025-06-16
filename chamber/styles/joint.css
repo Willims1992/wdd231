@@ -80,18 +80,7 @@ flex-direction: column;
 	content: "📍";
 }
 
-button#menuButton {
-    display: flex;
-    
-    font-size: 2.5rem;
-    font-weight: bold;
-    background: none;
-    border: none;
-    color: #ffffff;
-    position: absolute;
-    top: 7px;
-    right: 1rem;
-}
+
 
 button#menuButton::before {
     content: "\2261"; /* Hamburger Icon */ 
@@ -151,7 +140,7 @@ input, select, textarea {
 }
 
 .membership-card {
-    background: #fff;
+    background: #ffffff;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);

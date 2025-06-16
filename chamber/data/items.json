@@ -10,7 +10,7 @@
         "name": "The Amalgamation House",
         "address": "Wellington Bassey Way, Uyo",
         "description": "A historic site where the amalgamation of Northern and Southern Nigeria was declared in 1914.",
-        "image": "images/amalgamtion.webp"
+        "image": "images/amalgamation.webp"
     },
     {
         "name": "National Museum of Colonial History",
@@ -22,7 +22,7 @@
         "name": "Ibom Plaza",
         "address": "Uyo City Center",
         "description": "A bustling plaza with an open theater, shopping areas, and a double-rolled water fountain, serving as a hub for social and commercial activities.",
-        "image": "imges/plaza.webp"
+        "image": "chamber/images/plaza.webp"
     },
     {
         "name": "Godswill Akpabio International Stadium",

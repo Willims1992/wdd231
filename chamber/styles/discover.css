@@ -190,6 +190,19 @@ button#menuButton.open::before {
     transition: background 3s ease;
 }
 
+.fa-youtube {
+  transform: rotate(50deg);
+}
+
+.fa-twitter {
+  transform: rotate(60deg);
+}
+
+.fa-linkedin {
+  transform: rotate(50deg);
+}
+
+
 /* Footer */
 footer {
     display: grid;

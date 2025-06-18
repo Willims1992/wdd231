@@ -1,4 +1,8 @@
 /* General Styles */
+
+*{
+    box-sizing: border-box;
+}
 html, body {
     overflow-x: hidden;
     padding: 10px;
@@ -15,11 +19,17 @@ header {
 
 h1 {
     font-family: "Roboto", sans-serif;
-    color: #f57c00;
-    text-align: center;
-    margin: 10px;
-    font-size: 2rem;
+    background-color: #f57c00;
+    color: black;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 8px;
+  max-width: 600px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
+
 
 /* Logo */
 .logo {
@@ -34,7 +44,6 @@ h1 {
     width: 80px;
     height: auto;
     max-width: 100%;
-    alt: "Uyo Chamber of Commerce Logo";
 }
 
 figcaption {
@@ -124,71 +133,104 @@ button#menuButton.open::before {
     color: #ffffff;
 }
 
-/* Grid Layout */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 15px;
-    margin: 0 auto;
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem;
+  margin: 1rem 0.5rem;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
 }
 
-/* Item Cards */
 .item-card {
-    padding: 10px;
-    width: 90%;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    align-items: center;
-    border-radius: 20px;
+  display: grid;
+  grid-template-areas:
+    "title"
+    "figure"
+    "description"
+    "address"
+    "button";
+  gap: 0.75rem;
+  padding: 1rem;
+  margin: 1rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.item-card figure {
+  grid-area: figure;
+  margin: 0;
+  width: 100%;
 }
 
 .item-card img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    border-radius: 20px;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
-.item-card h2 {
-    font-size: 1.5rem;
-    margin: 10px 0;
-    text-align: center;
-}
-
-.item-card p {
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: #555;
-    margin: 10px 0;
-    text-align: center;
-    margin: 10px 0;
-}
-
+.item-card p{
+     text-align: center;
+     grid-area: description;
+    
+ }
 .item-card address {
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: #555;
-    text-align: center;
-    margin: 10px 0;
+     text-align: center;
+     grid-area: address;
+    
 }
-
 .item-card button {
-    
-    text-align: center;
-    font-weight: bold;
-    padding: 10px 20px;
-    width: 100%;
+    border: none;
+    background-color: #f57c00;
+    color: black;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+     grid-area: button;
     
 }
 
-
-.item-card button:hover {
+.item-card button:hover{
     text-decoration: underline;
-    background-color: #cec8c8;
-    transition: background 3s ease;
+    background-color: #975412;
 }
+
+.sidebar-message {
+  background-color: #f57c00;
+  color: black;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 8px;
+  max-width: 600px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.sidebar-message.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 
 .fa-youtube {
   transform: rotate(50deg);
@@ -243,8 +285,66 @@ footer {
     justify-content: center;
 }
 
+@media (min-width: 641px) and (max-width: 1024px) {
+    
+ .item-card {
+  grid-template-areas:
+    "figure  title"
+    "figure description"
+    "figure address"
+    "figure button";
+ }
+
+ .item-card img{
+    width: 300px;
+    height: 200px;
+ }
+
+ .item-card img:hover{
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in;
+ }
+
+}
+
+
+
+
+
+
 /* Responsive Design */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
+
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8";
+
+        width: 100%;
+    }
+
+     .item-card {
+  grid-template-areas:
+    "figure  title"
+    "figure description"
+    "figure address"
+    "figure button";
+ }
+
+  .item-card img{
+    width: 100%;
+    height: 200px;
+ }
+
+ .item-card img:hover{
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in;
+ }
     .navigation {
         flex-direction: row;
     }
@@ -253,18 +353,7 @@ footer {
     display: none;
     }
 
-    .item-card {
-        width: 90%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
 
-    .item-card img {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        border-radius: 20px;
-    }
 
      .navigation {
     display: flex;
@@ -287,9 +376,5 @@ footer {
     .navigation ul a {
       flex: 1 1 auto; /* Correct usage */
     }
-
-    .list {
-     display: block;
-   }
 
 }

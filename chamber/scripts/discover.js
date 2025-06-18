@@ -55,4 +55,30 @@ function displayItems(items) {
   });
 }
 
+const visitBox = document.getElementById("visitMessage");
+const now = Date.now();
+const lastVisit = Number(localStorage.getItem("lastVisit"));
+
+let message = "";
+
+if (!lastVisit) {
+  message = "Welcome! Let us know if you have any questions.";
+} else {
+  const msInDay = 1000 * 60 * 60 * 24;
+  const daysBetween = Math.floor((now - lastVisit) / msInDay);
+
+  if (daysBetween < 1) {
+    message = "Back so soon! Awesome!";
+  } else if (daysBetween === 1) {
+    message = "You last visited 1 day ago.";
+  } else {
+    message = `You last visited ${daysBetween} days ago.`;
+  }
+}
+
+visitBox.textContent = message;
+visitBox.classList.add("visible");
+localStorage.setItem("lastVisit", now);
+
+
 document.addEventListener("DOMContentLoaded", fetchItems);

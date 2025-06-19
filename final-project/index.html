@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SkillSwap – Trade skills, learn together. Peer-to-peer platform for micro-jobs and mentorship." />
+  <meta name="author" content="Ofonime William" />
+  <meta property="og:title" content="SkillSwap: Learn, Teach, Help" />
+  <meta property="og:description" content="Connect with people who want to learn what you know or help you with small tasks." />
+  <meta property="og:image" content="images/og-splash.webp" />
+  <meta property="og:type" content="website" />
+
+  <title>SkillSwap | Learn & Help</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="favicon.ico/" type="image/x-icon" />
+  <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.webp" alt="SkillSwap Logo" width="60" />
+      <h1>SkillSwap</h1>
+    </div>
+    <button id="menuButton" aria-label="Open navigation menu"></button>
+    <nav class="navigation" id="navbar">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="browse.html">Browse</a></li>
+        <li><a href="form.html">Post a Skill</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Trade Skills. Learn Together.</h2>
+      <p>Find help or offer what you know — all in one place.</p>
+      <div class="cta-buttons">
+        <a href="brows.html" class="button">Browse Skills</a>
+        <a href="form.html" class="button outline">Post a Request</a>
+      </div>
+    </section>
+
+    <aside id="visitMessage" class="sidebar-message"></aside>
+
+    <section class="feature-section">
+      <h3>🔥 Featured Skill Offers</h3>
+      <div class="grid-container" id="cardsContainer">
+        <!-- Skill cards injected by JS -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>©2025 SkillSwap | Built by Ofonime William</p>
+    <p><a href="attributions.html">Attributions</a></p>
+  </footer>
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-content">
+    <span id="modalClose" class="close" aria-label="Close modal">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <img id="modalImage" src="" alt="" />
+    <p id="modalCategory"></p>
+    <p id="modalDescription"></p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+/* Color and Typography Style */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  margin: 0;
+  color: #143d16;
+  padding: 1rem;
+}
+
+h1{
+    color: #ffffff;
+}
+ h2 {
+  font-family: 'Segoe UI', sans-serif;
+  color: #007bff;
+  margin-top: 2rem;
+}
+
+header, footer {
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+img {
+  border: 1px solid #143d16;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Ofonime William" />
+  <meta name="description" content="Submit a new skill or micro-job offer to SkillSwap's learning exchange." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post a Skill | SkillSwap</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="favicon.ico" />
+  <script type="module" src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.webp" alt="SkillSwap Logo" width="60" />
+      <h1>SkillSwap</h1>
+    </div>
+    <button id="menuButton" aria-label="Toggle menu"></button>
+    <nav class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="browse.html">Browse</a></li>
+        <li><a href="form.html" class="active">Post a Skill</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Post a New Skill</h2>
+      <form action="confirmation.html" method="get" id="skillForm">
+        <label for="fullname">Your Name:</label>
+        <input type="text" id="fullname" name="fullname" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="skillname">Skill Title:</label>
+        <input type="text" id="skillname" name="skillname" required minlength="5" />
+
+        <label for="category">Category:</label>
+        <select id="category" name="category" required>
+          <option value="">Select</option>
+          <option value="Music">Music</option>
+          <option value="Tech">Tech</option>
+          <option value="Design">Design</option>
+          <option value="Crafts">Crafts</option>
+          <option value="Food">Food</option>
+        </select>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="5" required></textarea>
+
+        <button type="submit">Submit Skill</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>©2025 SkillSwap | Built by Ofonime William</p>
+    <p><a href="attributions.html">Attributions</a></p>
+  </footer>
+</body>
+</html>

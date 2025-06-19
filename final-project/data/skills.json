@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Guitar Lessons",
+    "category": "Music",
+    "description": "Teach acoustic guitar basics, chords, and strumming for beginners.",
+    "image": "images/guitar.jpg"
+  },
+  {
+    "name": "Resume Writing Help",
+    "category": "Career",
+    "description": "Assist with polishing resumes for job seekers and students.",
+    "image": "images/resume.jpg"
+  },
+  {
+    "name": "JavaScript Tutoring",
+    "category": "Tech",
+    "description": "Explain JS fundamentals, DOM, and loops to junior coders.",
+    "image": "images/js.jpg"
+  },
+  {
+    "name": "French Conversation Partner",
+    "category": "Language",
+    "description": "Casual weekly French chats to practice speaking and listening.",
+    "image": "images/french.jpg"
+  },
+  {
+    "name": "Basic Video Editing",
+    "category": "Media",
+    "description": "Walkthrough of trimming, transitions, and audio sync in DaVinci Resolve.",
+    "image": "images/video.jpg"
+  },
+  {
+    "name": "Blog Setup with WordPress",
+    "category": "Web",
+    "description": "Assist new bloggers with installing WordPress and customizing a theme.",
+    "image": "images/blog.jpg"
+  },
+  {
+    "name": "Chess Strategy Help",
+    "category": "Games",
+    "description": "Teach opening principles, tactics, and endgame logic.",
+    "image": "images/chess.jpg"
+  },
+  {
+    "name": "Canva Graphic Design",
+    "category": "Design",
+    "description": "Guide others in creating posters and IG posts using Canva tools.",
+    "image": "images/canva.jpg"
+  },
+  {
+    "name": "Math Study Buddy",
+    "category": "Academics",
+    "description": "Help teens prepare for exams or homework in algebra and geometry.",
+    "image": "images/math.jpg"
+  },
+  {
+    "name": "Fitness Form Check",
+    "category": "Health",
+    "description": "Review squats, push-ups, and stretching for proper technique.",
+    "image": "images/fitness.jpg"
+  },
+  {
+    "name": "Sewing Basics",
+    "category": "Crafts",
+    "description": "Walkthrough of threading a machine, basic stitches, and hemming.",
+    "image": "images/sewing.jpg"
+  },
+  {
+    "name": "Public Speaking Tips",
+    "category": "Soft Skills",
+    "description": "Help with structure, tone, and confidence for speeches or presentations.",
+    "image": "images/speaking.jpg"
+  },
+  {
+    "name": "Cooking 101: Rice & Sauce",
+    "category": "Food",
+    "description": "Teach basics like making perfect rice and tomato-based sauces.",
+    "image": "images/cooking.jpg"
+  },
+  {
+    "name": "Photo Editing with Snapseed",
+    "category": "Photo",
+    "description": "Guide people through filters, crop, and light adjustments.",
+    "image": "images/photo.jpg"
+  },
+  {
+    "name": "Online Research Help",
+    "category": "Academics",
+    "description": "Show efficient techniques to research and cite sources for assignments.",
+    "image": "images/research.jpg"
+  }
+]

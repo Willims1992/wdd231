@@ -25,7 +25,7 @@ visitBox.classList.add("visible");
 localStorage.setItem("lastVisit", now);
 async function loadSkillCards() {
   try {
-    const res = await fetch("https://);
+    const res = await fetch(url);
     if (!res.ok) throw new Error("Failed to fetch skill data");
 
     const skills = await res.json();

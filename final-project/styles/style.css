@@ -91,6 +91,7 @@ header {
 
 .navigation {
     display: none;
+    color: #f57c00;
     margin-top: 50px;
     flex-direction: column; 
     justify-content: center;
@@ -114,6 +115,12 @@ header {
   color: #f57c00;
   text-decoration: none;
   font-weight: bold;
+}
+
+.navigation ul li a{
+  color: #f57c00;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 #menuButton {

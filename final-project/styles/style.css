@@ -22,7 +22,8 @@ body {
 }
 
 /* Header */
-header {
+
+/*header {
   background-color: var(--dark);
   color: white;
   padding: 1rem;
@@ -41,7 +42,7 @@ header {
   color: var(--primary);
 }
 
-.navigation ul {
+/*.navigation ul {
   display: none;
   list-style: none;
   flex-direction: column;
@@ -68,7 +69,61 @@ button#menuButton {
   position: absolute;
   top: 1rem;
   right: 1rem;
+}*/
+
+/* Removed invalid HTML markup from CSS file */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f57c00;
+  padding: 1rem;
+  background-color: white;
+  position: relative;
+  z-index: 10;
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navigation {
+    display: none;
+    margin-top: 50px;
+    flex-direction: column; 
+    justify-content: center;
+    gap: 1rem; 
+}
+
+.navigation.open{
+    display: block;
+}
+
+
+.navigation ul {
+  list-style: none;
+  color: #f57c00;
+  padding: 1rem;
+}
+
+.navigation a {
+  display: block;
+  padding: 0.5rem 0;
+  color: #f57c00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#menuButton {
+  background: none;
+  color: #f57c00;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 
 /* Hero */
 /*.hero {
@@ -401,6 +456,43 @@ form button[type="submit"]:hover {
 
 
 @media screen and (min-width: 1025px) {
+
+
+
+
+  #menuButton {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    width: 50%;
+    margin-top: -10px;
+    justify-content: space-around;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .navigation ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem; /* optional if you want a little extra spacing */
+  padding: 0;
+  margin: 0;
+}
+
+
+  .navigation a {
+    padding: 0;
+    color: black;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+
+
   .grid-container {
     display: grid;
     gap: 1.5rem;

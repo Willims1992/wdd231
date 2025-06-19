@@ -59,7 +59,6 @@ async function loadSkillCards() {
   }
 }
 
-//card.addEventListener("click", () => showModal(skill));
 
 
 loadSkillCards();

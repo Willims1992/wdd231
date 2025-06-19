@@ -18,14 +18,13 @@ if (!lastVisit) {
   }
 }
 
-const url = 'https://willims1992.github.io/wdd231/final-project/data/skills.json'
 
 visitBox.textContent = message;
 visitBox.classList.add("visible");
 localStorage.setItem("lastVisit", now);
 async function loadSkillCards() {
   try {
-    const res = await fetch(url);
+    const res = await fetch("https://willims1992.github.io/wdd231/final-project/data/skills.json");
     if (!res.ok) throw new Error("Failed to fetch skill data");
 
     const skills = await res.json();

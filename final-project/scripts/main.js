@@ -18,7 +18,7 @@ if (!lastVisit) {
   }
 }
 
-const url = 'https://willims1992.github.io/wdd231/final-project/skills.json'
+const url = 'https://willims1992.github.io/wdd231/final-project/data/skills.json'
 
 visitBox.textContent = message;
 visitBox.classList.add("visible");

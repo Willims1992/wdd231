@@ -18,6 +18,8 @@ if (!lastVisit) {
   }
 }
 
+const url = 'https://willims1992.github.io/wdd231/final-project/skills.json'
+
 visitBox.textContent = message;
 visitBox.classList.add("visible");
 localStorage.setItem("lastVisit", now);

@@ -1,0 +1,182 @@
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  #menuButton {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    width: 100%;
+    margin-top: -8px;
+    justify-content: space-around;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .navigation ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navigation a {
+    padding: 0.4rem;
+    font-size: 1rem;
+    color: black;
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 1.25rem;
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8"
+      "card9 card10"
+      "card11 card12"
+      "card13 card14"
+      "card15 card15";
+    padding: 1.5rem;
+  }
+
+  .item-card:nth-child(1)  { grid-area: card1; }
+  .item-card:nth-child(2)  { grid-area: card2; }
+  .item-card:nth-child(3)  { grid-area: card3; }
+  .item-card:nth-child(4)  { grid-area: card4; }
+  .item-card:nth-child(5)  { grid-area: card5; }
+  .item-card:nth-child(6)  { grid-area: card6; }
+  .item-card:nth-child(7)  { grid-area: card7; }
+  .item-card:nth-child(8)  { grid-area: card8; }
+  .item-card:nth-child(9)  { grid-area: card9; }
+  .item-card:nth-child(10) { grid-area: card10; }
+  .item-card:nth-child(11) { grid-area: card11; }
+  .item-card:nth-child(12) { grid-area: card12; }
+  .item-card:nth-child(13) { grid-area: card13; }
+  .item-card:nth-child(14) { grid-area: card14; }
+  .item-card:nth-child(15) { grid-area: card15; }
+
+  .item-card {
+    display: grid;
+    grid-template-areas:
+      "figure title"
+      "figure description"
+      "figure category"
+      "figure button";
+    grid-template-columns: 1fr 2fr;
+    gap: 0.75rem;
+    align-items: start;
+    padding: 1rem;
+  }
+
+  .item-card figure             { grid-area: figure; }
+  .item-card h4                 { grid-area: title; }
+  .item-card p:nth-of-type(1)   { grid-area: category; }
+  .item-card p:nth-of-type(2)   { grid-area: description; }
+  .item-card button             { grid-area: button; }
+}
+
+
+
+
+
+
+@media screen and (min-width: 1025px) {
+
+
+
+
+  #menuButton {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    width: 50%;
+    margin-top: -10px;
+    justify-content: space-around;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .navigation ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem; /* optional if you want a little extra spacing */
+  padding: 0;
+  margin: 0;
+}
+
+
+  .navigation a {
+    padding: 0;
+    color: black;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+
+
+  .grid-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "card1 card2 card3"
+      "card4 card5 card6"
+      "card7 card8 card9"
+      "card10 card11 card12"
+      "card13 card14 card15";
+    padding: 2rem;
+  }
+
+  .item-card:nth-child(1)  { grid-area: card1; }
+  .item-card:nth-child(2)  { grid-area: card2; }
+  .item-card:nth-child(3)  { grid-area: card3; }
+  .item-card:nth-child(4)  { grid-area: card4; }
+  .item-card:nth-child(5)  { grid-area: card5; }
+  .item-card:nth-child(6)  { grid-area: card6; }
+  .item-card:nth-child(7)  { grid-area: card7; }
+  .item-card:nth-child(8)  { grid-area: card8; }
+  .item-card:nth-child(9)  { grid-area: card9; }
+  .item-card:nth-child(10) { grid-area: card10; }
+  .item-card:nth-child(11) { grid-area: card11; }
+  .item-card:nth-child(12) { grid-area: card12; }
+  .item-card:nth-child(13) { grid-area: card13; }
+  .item-card:nth-child(14) { grid-area: card14; }
+  .item-card:nth-child(15) { grid-area: card15; }
+
+  .item-card {
+    display: grid;
+    grid-template-areas:
+      "figure title"
+      "figure description"
+      "figure category"
+      "figure button";
+    grid-template-columns: 1fr 2fr;
+    gap: 0.75rem;
+    align-items: start;
+  }
+
+  .item-card figure       { grid-area: figure; }
+  .item-card h4           { grid-area: title; }
+  .item-card p:nth-of-type(1) { grid-area: category; }
+  .item-card p:nth-of-type(2) { grid-area: description; }
+  .item-card button       { grid-area: button; }
+}
+
+
+
+

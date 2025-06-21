@@ -7,63 +7,57 @@
   <meta name="author" content="Ofonime William" />
   <title>Browse | SkillSwap</title>
   <link rel="stylesheet" href="styles/style.css" />
-  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles/media-screens.css">
+  <link rel="icon" href="../chamber/images/favicon.ico" />
   <script type="module" src="scripts/browes.js" defer></script>
 </head>
 <body>
   <header>
     <div class="logo">
-      <img src="images/logo.webp" alt="SkillSwap Logo" width="60" />
+      <img src="../chamber/images/favicon.ico" alt="SkillSwap Logo" width="60" />
       <h1>SkillSwap</h1>
     </div>
     <button id="menuButton" aria-label="Open menu"></button>
     <nav class="navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="browse.html" class="active">Browse</a></li>
+        <li><a href="brows.html" class="active">Browse</a></li>
         <li><a href="form.html">Post a Skill</a></li>
       </ul>
     </nav>
   </header>
-
   <main>
-    <section class="feature-section">
-      <h2>Browse All Skill Offers</h2>
-     <!-- <section class="filter-bar">-->
-  <!--<label for="categoryFilter">Filter by Category:</label>-->
-  <!--<select id="categoryFilter">
-    <option value="all">All Categories</option>
-    <option value="Music">Music</option>
-    <option value="Tech">Tech</option>
-    <option value="Design">Design</option>
-    <option value="Crafts">Crafts</option>
-    <option value="Academics">Academics</option>
-    <option value="Health">Health</option>
-    <option value="Food">Food</option>
-     Add more categories as needed 
-  </select>-->
-</section>
-<section class="filter-bar">
-  <label for="searchInput">Search:</label>
-  <input type="text" id="searchInput" placeholder="Search by keyword..." />
+  <section class="feature-section">
+    <h2>Browse All Skill Offers</h2>
 
-  <label for="categoryFilter">Category:</label>
-  <select id="categoryFilter">
-    <option value="all">All</option>
-    <option value="Music">Music</option>
-    <option value="Tech">Tech</option>
-    <option value="Design">Design</option>
-    <option value="Crafts">Crafts</option>
-    <option value="Academics">Academics</option>
-    <option value="Health">Health</option>
-    <option value="Food">Food</option>
-  </select>
-</section>
+    <!-- 🔺 MOVE THIS UP -->
+    <section class="filter-bar">
+      <label for="searchInput">Search:</label>
+      <input type="text" id="searchInput" placeholder="Search by keyword..." />
 
-
-      <div class="grid-container" id="browseContainer"></div>
+      <label for="categoryFilter">Category:</label>
+      <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="Music">Music</option>
+        <option value="Tech">Tech</option>
+        <option value="Design">Design</option>
+        <option value="Crafts">Crafts</option>
+        <option value="Academics">Academics</option>
+        <option value="Health">Health</option>
+        <option value="Food">Food</option>
+      </select>
     </section>
-  </main>
+
+    <!-- Skill cards below -->
+    <div class="grid-container" id="cardsContainer">
+      <!-- Cards injected via JS -->
+    </div>
+  </section>
+</main>
+
+
+
+     
 
   <footer>
     <p>©2025 SkillSwap | Built by Ofonime William</p>

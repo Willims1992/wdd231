@@ -149,7 +149,9 @@ async function loadBrowseCards() {
 
 loadBrowseCards();*/
 
-const container = document.getElementById("browseContainer");
+const container = document.getElementById("cardsContainer");
+
+
 const searchInput = document.getElementById("searchInput");
 const categorySelect = document.getElementById("categoryFilter");
 let allSkills = [];
@@ -194,7 +196,7 @@ categorySelect.addEventListener("change", applyFilters);
 
 async function loadBrowseCards() {
   try {
-    const res = await fetch("data/skills.json");
+    const res = await fetch("https://willims1992.github.io/wdd231/final-project/data/skills.json");
     if (!res.ok) throw new Error("Failed to fetch skills");
     allSkills = await res.json();
     renderSkills(allSkills);
@@ -204,6 +206,40 @@ async function loadBrowseCards() {
 }
 
 loadBrowseCards();
+
+/*function showModal(skill) {
+  const modal = document.querySelector(".modal");
+  modal.querySelector(".modal-title").textContent = skill.name;
+  modal.querySelector(".modal-description").textContent = skill.description;
+  modal.classList.add("open");
+}
+
+document.querySelector(".close-modal").addEventListener("click", () => {
+  document.querySelector(".modal").classList.remove("open");
+});*/
+
+
+function showModal(skill) {
+
+  const modal = document.getElementById("modal");
+  document.getElementById("modalTitle").textContent = skill.name;
+  document.getElementById("modalDescription").textContent = skill.description;
+  document.getElementById("modalCategory").textContent = `Category: ${skill.category}`;
+  document.getElementById("modalImage").src = skill.image;
+  document.getElementById("modalImage").alt = skill.name;
+  modal.classList.remove("hidden");
+  modal.classList.add("show"); // ✅ This matches my CSS
+
+}
+
+document.getElementById("modalClose").addEventListener("click", () => {
+  const modal = document.getElementById("modal");
+  modal.classList.remove("show");
+  modal.classList.add("hidden"); // ✅ Properly hides the modal
+
+});
+
+
 
 
 

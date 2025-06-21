@@ -249,6 +249,21 @@ header {
   gap: 0.5rem;
 }
 
+.item-card figure {
+  grid-area: figure;
+  margin: 0;
+  width: 100%;
+}
+
+.item-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+
 /* Footer */
 footer {
   background-color: var(--dark);
@@ -261,30 +276,27 @@ footer {
 .modal {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.6);
-  display: flex;
-  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  display: none; /* Hide by default */
   justify-content: center;
+  align-items: center;
   z-index: 1000;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s ease;
+}
+
+.modal.show {
+  display: flex; /* Make modal visible */
+  animation: fadeIn 0.4s ease;
 }
 
 .modal-content {
   background: #fff;
   padding: 2rem;
   max-width: 500px;
+  width: 90%;
   border-radius: 10px;
   text-align: center;
   position: relative;
-}
-
-.modal img {
-  width: 100%;
-  height: auto;
-  margin: 1rem 0;
-  border-radius: 6px;
+  animation: slideUp 0.4s ease;
 }
 
 .modal .close {
@@ -295,10 +307,27 @@ footer {
   color: #333;
 }
 
-.modal.show {
-  visibility: visible;
-  opacity: 1;
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+
+.modal img {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 6px;
+}
+
+
+
 
 .hidden { display: none; }
 
@@ -322,40 +351,10 @@ footer {
   text-decoration: underline;
 }
 
-.modal {
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease, transform 0.4s ease;
-}
 
-.modal.show {
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-}
 
-.modal-content {
-  background: #fff;
-  padding: 2rem;
-  max-width: 500px;
-  border-radius: 10px;
-  text-align: center;
-  position: relative;
-  transform: translateY(-30px);
-  transition: transform 0.4s ease;
-}
 
-.modal.show .modal-content {
-  transform: translateY(0);
-}
+
 
 filter-bar {
   padding: 1rem;
@@ -455,97 +454,6 @@ form button[type="submit"] {
 form button[type="submit"]:hover {
   background-color: #975412;
   color: white;
-}
-
-
-
-
-
-
-@media screen and (min-width: 1025px) {
-
-
-
-
-  #menuButton {
-    display: none;
-  }
-
-  .navigation {
-    display: flex;
-    width: 50%;
-    margin-top: -10px;
-    justify-content: space-around;
-    box-shadow: none;
-    background: transparent;
-  }
-
-  .navigation ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 2rem; /* optional if you want a little extra spacing */
-  padding: 0;
-  margin: 0;
-}
-
-
-  .navigation a {
-    padding: 0;
-    color: black;
-  }
-
-  header {
-    flex-wrap: wrap;
-  }
-
-
-  .grid-container {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-      "card1 card2 card3"
-      "card4 card5 card6"
-      "card7 card8 card9"
-      "card10 card11 card12"
-      "card13 card14 card15";
-    padding: 2rem;
-  }
-
-  .item-card:nth-child(1)  { grid-area: card1; }
-  .item-card:nth-child(2)  { grid-area: card2; }
-  .item-card:nth-child(3)  { grid-area: card3; }
-  .item-card:nth-child(4)  { grid-area: card4; }
-  .item-card:nth-child(5)  { grid-area: card5; }
-  .item-card:nth-child(6)  { grid-area: card6; }
-  .item-card:nth-child(7)  { grid-area: card7; }
-  .item-card:nth-child(8)  { grid-area: card8; }
-  .item-card:nth-child(9)  { grid-area: card9; }
-  .item-card:nth-child(10) { grid-area: card10; }
-  .item-card:nth-child(11) { grid-area: card11; }
-  .item-card:nth-child(12) { grid-area: card12; }
-  .item-card:nth-child(13) { grid-area: card13; }
-  .item-card:nth-child(14) { grid-area: card14; }
-  .item-card:nth-child(15) { grid-area: card15; }
-
-  .item-card {
-    display: grid;
-    grid-template-areas:
-      "figure title"
-      "figure description"
-      "figure category"
-      "figure button";
-    grid-template-columns: 1fr 2fr;
-    gap: 0.75rem;
-    align-items: start;
-  }
-
-  .item-card figure       { grid-area: figure; }
-  .item-card h4           { grid-area: title; }
-  .item-card p:nth-of-type(1) { grid-area: category; }
-  .item-card p:nth-of-type(2) { grid-area: description; }
-  .item-card button       { grid-area: button; }
 }
 
 

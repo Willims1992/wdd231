@@ -3,90 +3,90 @@
     "name": "Guitar Lessons",
     "category": "Music",
     "description": "Teach acoustic guitar basics, chords, and strumming for beginners.",
-    "image": "images/guitar.jpg"
+    "image": "https://cdn.pixabay.com/photo/2022/07/04/04/37/musician-7300353_1280.jpg"
   },
   {
     "name": "Resume Writing Help",
     "category": "Career",
     "description": "Assist with polishing resumes for job seekers and students.",
-    "image": "images/resume.jpg"
+    "image": "https://cdn.pixabay.com/photo/2018/10/05/17/34/cv-3726428_1280.jpg"
   },
   {
     "name": "JavaScript Tutoring",
     "category": "Tech",
     "description": "Explain JS fundamentals, DOM, and loops to junior coders.",
-    "image": "images/js.jpg"
+    "image": "https://cdn.pixabay.com/photo/2022/03/21/21/44/file-7084007_1280.png"
   },
   {
     "name": "French Conversation Partner",
     "category": "Language",
     "description": "Casual weekly French chats to practice speaking and listening.",
-    "image": "images/french.jpg"
+    "image": "https://cdn.pixabay.com/photo/2017/01/23/09/24/learn-2001847_1280.jpg"
   },
   {
     "name": "Basic Video Editing",
     "category": "Media",
     "description": "Walkthrough of trimming, transitions, and audio sync in DaVinci Resolve.",
-    "image": "images/video.jpg"
+    "image": "https://cdn.pixabay.com/photo/2015/05/15/02/07/computer-767781_1280.jpg"
   },
   {
     "name": "Blog Setup with WordPress",
     "category": "Web",
     "description": "Assist new bloggers with installing WordPress and customizing a theme.",
-    "image": "images/blog.jpg"
+    "image": "https://cdn.pixabay.com/photo/2015/11/06/13/25/blog-1027861_1280.jpg"
   },
   {
     "name": "Chess Strategy Help",
     "category": "Games",
     "description": "Teach opening principles, tactics, and endgame logic.",
-    "image": "images/chess.jpg"
+    "image": "https://cdn.pixabay.com/photo/2016/10/05/15/22/king-1716907_1280.jpg"
   },
   {
     "name": "Canva Graphic Design",
     "category": "Design",
     "description": "Guide others in creating posters and IG posts using Canva tools.",
-    "image": "images/canva.jpg"
+    "image": "https://cdn.pixabay.com/photo/2017/08/06/13/15/painting-2592410_1280.jpg"
   },
   {
     "name": "Math Study Buddy",
     "category": "Academics",
     "description": "Help teens prepare for exams or homework in algebra and geometry.",
-    "image": "images/math.jpg"
+    "image": "https://cdn.pixabay.com/photo/2017/10/03/20/59/math-2814174_1280.jpg"
   },
   {
     "name": "Fitness Form Check",
     "category": "Health",
     "description": "Review squats, push-ups, and stretching for proper technique.",
-    "image": "images/fitness.jpg"
+    "image": "https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149_1280.jpg"
   },
   {
     "name": "Sewing Basics",
     "category": "Crafts",
     "description": "Walkthrough of threading a machine, basic stitches, and hemming.",
-    "image": "images/sewing.jpg"
+    "image": "https://cdn.pixabay.com/photo/2023/10/30/16/54/sew-8353303_1280.jpg"
   },
   {
     "name": "Public Speaking Tips",
     "category": "Soft Skills",
     "description": "Help with structure, tone, and confidence for speeches or presentations.",
-    "image": "images/speaking.jpg"
+    "image": "https://cdn.pixabay.com/photo/2024/04/05/03/45/woman-8676460_1280.jpg"
   },
   {
     "name": "Cooking 101: Rice & Sauce",
     "category": "Food",
     "description": "Teach basics like making perfect rice and tomato-based sauces.",
-    "image": "images/cooking.jpg"
+    "image": "https://cdn.pixabay.com/photo/2022/09/22/04/46/kitchen-7471627_1280.jpg"
   },
   {
     "name": "Photo Editing with Snapseed",
     "category": "Photo",
     "description": "Guide people through filters, crop, and light adjustments.",
-    "image": "images/photo.jpg"
+    "image": "https://cdn.pixabay.com/photo/2024/08/16/20/49/gadgets-8974615_1280.jpg"
   },
   {
     "name": "Online Research Help",
     "category": "Academics",
     "description": "Show efficient techniques to research and cite sources for assignments.",
-    "image": "images/research.jpg"
+    "image": "https://cdn.pixabay.com/photo/2020/10/23/14/55/woman-5679000_1280.jpg"
   }
 ]

@@ -1,6 +1,6 @@
-import { displayVisitMessage } from "./storage/visitTracker.mjs";
-import { loadSkills } from "./data/skillLoader.mjs";
-import { showModal, closeModal } from "./ui/modal.mjs";
+import { displayVisitMessage } from "./visitTracker.mjs";
+import { loadSkills } from "./skillLoader.mjs";
+import { showModal, closeModal } from "./modal.mjs";
 
 // Visit message logic
 displayVisitMessage();

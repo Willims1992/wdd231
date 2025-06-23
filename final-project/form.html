@@ -7,8 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Post a Skill | SkillSwap</title>
   <link rel="stylesheet" href="styles/style.css" />
-  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="/chamber/images/favicon.ico" />
   <script type="module" src="scripts/form.js" defer></script>
+  <script src="./scripts/dated.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
   <header>
@@ -16,14 +19,15 @@
       <img src="../chamber/images/favicon.ico" alt="SkillSwap Logo" width="60" />
       <h1>SkillSwap</h1>
     </div>
-    <button id="menuButton" aria-label="Toggle menu"></button>
+     <button id="menuButton" aria-label="Open menu"></button>
     <nav class="navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="brows.html">Browse</a></li>
-        <li><a href="form.html" class="active">Post a Skill</a></li>
-      </ul>
-    </nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="brows.html" class="active">Browse</a></li>
+    <li><a href="form.html">Post a Skill</a></li>
+  </ul>
+</nav>
+
   </header>
 
   <main>
@@ -58,8 +62,32 @@
   </main>
 
   <footer>
-    <p>©2025 SkillSwap | Built by Ofonime William</p>
-    <p><a href="attributions.html">Attributions</a></p>
-  </footer>
+        <div class="adress">
+            <p><strong>Skill-swap</strong> <br>C45 Ewet Housing Estate <br>Uyo, Akwa Ibom State <br>info@skill-swap.org <br>(234) 8151915541</p>
+        </div>
+
+        <div class="media">
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" title="YouTube">
+                <i class="fa-brands fa-youtube fa-rotate-50"></i>
+          </a>
+
+           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" title="Twitter">
+               <i class="fa-brands fa-twitter fa-rotate-60"></i>
+           </a>
+
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                <i class="fa-brands fa-linkedin fa-rotate-50"></i>
+            </a>
+            <!--<a href="https://youtube.com" target="_blank" rel="noopener" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>-->
+        </div>
+         
+        <div class="copyright">
+           <p> WDD231 Final Project<br>Ofonime William <br>&copy;Skill-swap | Created by Ofonime William   <span id="currentYear"></span></p>
+           <p id="lastModified"></p>
+        </div>
+    </footer>
+
 </body>
 </html>

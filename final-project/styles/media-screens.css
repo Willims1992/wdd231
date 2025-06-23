@@ -3,11 +3,12 @@
     display: none;
   }
 
-  .navigation {
+  /*.navigation {
     display: flex;
     width: 100%;
     margin-top: -8px;
     justify-content: space-around;
+    text-align: right;
     background: transparent;
     box-shadow: none;
   }
@@ -15,7 +16,6 @@
   .navigation ul {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     gap: 1.5rem;
     padding: 0;
     margin: 0;
@@ -33,6 +33,66 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  
+
+  .navigation {
+    display: flex;
+    width: 100%;
+    margin-top: -10px;
+    justify-content: flex-end;
+    align-items: right;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .navigation ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: right;
+  width: 100%;
+  gap: 2rem; /* optional if you want a little extra spacing 
+  padding: 0;
+  margin: 0;
+}
+
+
+  .navigation a {
+    padding: 0;
+    text-align: right;
+  }*/
+
+  .navigation {
+  display: flex;
+  justify-content: flex-end; /* or space-between if needed */
+  align-items: center; /* not 'right' */
+  width: 100%;
+  background: transparent;
+  margin-top: 0;
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center; /* not 'right' */
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation a {
+  padding: 0.4rem 0;
+  text-align: left;
+  font-size: 1rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
 
   .grid-container {
     display: grid;
@@ -102,26 +162,32 @@
 
   .navigation {
     display: flex;
-    width: 50%;
-    margin-top: -10px;
-    justify-content: space-around;
+    width: 100%;
+    flex-direction: row;
+    margin-top: -15px;
+    justify-content:flex-end;
     box-shadow: none;
     background: transparent;
   }
 
   .navigation ul {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: flex-end;
   gap: 2rem; /* optional if you want a little extra spacing */
   padding: 0;
-  margin: 0;
+  font-size: 18px;
+  margin-right: 20px;
 }
 
 
   .navigation a {
     padding: 0;
-    color: black;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 18px;
+
   }
 
   header {
